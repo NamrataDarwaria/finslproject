@@ -1,0 +1,196 @@
+
+@font-face {
+    font-family: "PPWoodland";
+    src: url(./img/PPWoodland-Regular.woff2);
+}
+@font-face {
+    font-family: "dm-sans";
+    src: url(./img/dm-sans-v11-latin_latin-ext-500.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 0 40px;
+
+}
+.nav-part1{
+    width: 40px;
+}
+.nav-part1 .line{
+    height: 2px;
+    width: 100%;
+    background-color: #434B34;
+    margin-bottom: 4px;
+}
+.nav-part2 button{
+    padding: 9px 20px;
+    font-weight: 600;
+    margin-right: 15px;
+    background-color: transparent;
+    color: #434B34;
+    border-radius: 50px;
+    border: 0.2px solid #E3E3C4;
+}
+.nav-part2 button:nth-last-child(1){
+    background-color: #434B34;
+    color: white;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+}
+.page1 svg{
+    scale: 0.22;
+    fill: #434B34;
+    position: absolute;
+    top: -12%;
+    z-index: 99;
+}
+.page1 img{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+.page2{
+    min-height: 150vh;
+    width: 100%;
+    background-color: #5B6647;
+    position: relative;
+}
+.page2 svg{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.text-content{
+    position: relative;
+    padding-top: 12vw;
+    z-index: 99;
+}
+.text-content h2{
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 6vw;
+    font-family: "PPWoodland";
+    color: #434B34;
+    font-weight: 500;
+}
+.text-content h2 span{
+    font-family: "PPWoodland";
+}
+.page2 .svg2{
+    position: absolute;
+    bottom: -10%;
+    width: 300vw;
+    fill: #5B6647;
+    z-index: 99;
+}
+.page2 .svg3{
+    position: absolute;
+    bottom: -10%;
+    left: -50vw;
+    width: 300vw;
+    fill: #E3E3C4;
+}
+.page3{
+    position: relative;
+    top: 40vh;
+    min-height: 100vh;
+    width: 100%;
+}
+.page3 h2{
+    text-align: center;
+    font-family: "PPWoodland";
+    font-size: 76px;
+    font-weight: 100;
+    color: #E3E3C4;
+}
+.page3 p{
+    font-family: "dm-sans";
+    padding-top: 13vh;
+    padding-left: 8vw;
+    opacity: 0.7;
+}
+.page3 .left a{
+    font-family: "dm-sans";
+    text-decoration: none;
+    font-size: 1.7em;
+    position: relative;
+    top: 10vh;
+    left: 8vw;
+    font-weight: 200;
+    color: #7B806E;
+}
+.page3 i{
+    background-color: #707663;
+    padding: 0px 12px;
+    border-radius: 50px;
+    color: #E3E3C4;
+    font-size: 20px;
+    margin-left: 1vw;
+}
+.page3 img{
+    margin-top: 24vh;
+    margin-left: 16vh;
+    height: 52vh;
+    border-radius: 20px;
+}
+.page3 .largeimg{
+    position: relative;
+    top: -116vh;
+    left: 38.5vw;
+    height: 62vh;
+    border-radius: 20px;
+}
+.page3 .smallimg{
+    position: relative;
+    top: -70.2vh;
+    left: -13.8vw;
+    height: 42vh;
+    width: 22vw;
+    border-radius: 20px;
+}
+.page4{
+    position: relative;
+    top: -40vh;
+    min-height: 100vh;
+    padding: 15vw 3vw;
+    width: 100%;
+}
+.elem{
+    width: 100%;
+    height: 25vh;
+    border: 1px solid #555;
+    border-top: none;
+}
+
+.elem:nth-child(1){
+    border-top: 1px solid #555;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.elem:nth-last-child(1){
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
